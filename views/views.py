@@ -63,7 +63,7 @@ def pay_employee(self):
         for elem in item[1]:
             day = elem[0:2]
             pay += int(payment_schedules(day, elem[2:]))
-        cad += str(pay)
+        cad += str(pay) + ' USD'
         pay = 0
         print(cad)
         cad = 'The amount to pay '
